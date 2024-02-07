@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>unishop</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="plugin/swiperSlider/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="plugin/bootstrap-4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" text="text/css" href="plugin/fontawesome/css/all.min.css">
+    <link rel="stylesheet" text="text/css" href="css/fonts.css">
+    <link rel="stylesheet" text="text/css" href="css/reset.css">
+    <link rel="stylesheet" text="text/css" href="css/style.css?v=1">
+    <link rel="stylesheet" text="text/css" href="css/responsive.css?v=1">
+</head>
+
+<body>
+    <header>
+        <div class="header_top">
+            <div class="container">
+                <div class="top_header d-flex align-items-center justify-content-between">
+                    <div class="dropdown lang_block">
+                        <button class="dropdown-toggle lang_btn d-flex" type="button" id="dropdownMenuButtonLang"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/geo.svg" alt="" class="mr-2"> GEO
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButtonLang">
+                            <a class="dropdown-item" href="#">ENG</a>
+                        </div>
+                    </div>
+                    <div class="sign_block d-flex align-items-center">
+                        <div class="sign_buttons sign_in">
+                            <img src="img/lock.svg" alt="" class="mr-2">
+                            რეგისტრაცია
+                        </div>
+                        <div class="sign_buttons sign_up">
+                            <img src="img/user.svg" alt="">
+                            ავტორიზაცია
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_">
+            <div class="container">
+                <div class="nav_block_ d-flex align-items-center">
+                    <a href="#">
+                        <div class="logo_block">
+                            <img src="img/unishop.svg" alt="">
+                        </div>
+                    </a>
+                    <div class="search_block position-relative">
+                        <input type="text" placeholder="ძებნა...">
+                        <div class="search_">
+                            <img src="img/search_.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="contact_us d-lg-flex d-none">
+                        <img src="img/operator.svg" alt="">
+                        <div class="d-flex flex-column">
+                            <a href="telto:0322 151 150">
+                                <p>დაგვიკავშირდით</p>
+                                0322 151 150
+                            </a>
+                        </div>
+                    </div>
+                    <div class="wish_block d-flex align-items-center">
+                        <a href="#" class="cart_item">
+                            <img src="img/rating_.svg" alt="">
+                        </a>
+                        <a href="#" class="cart_item">
+                            <img src="img/fav.svg" alt="">
+                        </a>
+                        <a href="#" class="cart_item position-relative">
+                            <img src="img/basket.svg" alt="">
+                            <div class="cart_box">
+                                84
+                            </div>
+                        </a>
+                        <div class="mobile_menu_block d-lg-none d-block">
+                            <div class="mobile_menu_items">
+                                <div class="nav_right_side d-flex align-items-center justify-content-between">
+                                    <div class="burger_menu">
+                                        <div class="burger__">
+                                            <i></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile_navigation">
+                                <div class="container">
+                                    <ul class="nav_ul mb-4">
+                                        <li class="nav_li">
+                                            <a href="#"> როგორ შევიძინო </a>
+                                        </li>
+                                        <li class="nav_li">
+                                            <a href="#"> წესები</a>
+                                        </li>
+                                        <li class="nav_li">
+                                            <a href="#">ფასდაკლებები და აქციები</a>
+                                        </li>
+                                        <li class="nav_li">
+                                            <a href="#">კონტაქტი</a>
+                                        </li>
+                                        <li class="nav_li">
+                                            <a href="#">გადახდის მეთოდი</a>
+                                        </li>
+                                    </ul>
+                                    <div class="left_side mb-4">
+                                        <div class="mobile_number">
+                                            <a href="tel:0322 151 150" class="d-flex align-items-center">
+                                                <div class="phone_icon mr-2">
+                                                    <img src="img/operator.svg" alt="" class="img_fluid" />
+                                                </div>
+                                                <p>
+                                                0322 151 150
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between nav_block">
+                    <div class="dropdown">
+                        <button class="category_btn dropdown-toggle d-flex align-items-center type=" button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/burger_.png" alt="">
+                            ყველა კატეგორია
+                        </button>
+                        <div class="dropdown-menu caregory_menu" aria-labelledby="dropdownMenuButton">
+                            <nav class="navigation">
+                                <ul class="level-1">
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/christmas-tree.png" alt="">
+                                            საახალწლო</a>
+                                        <div class="level-2">
+                                            <div class="shop_menu d-flex flex-wrap">
+                                                <div class="category_item">
+                                                    <ul class="category_ul">
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">ტელევიზორები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">დინამიკები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">მუსიკალური
+                                                                ინსტრუმენტები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">
+                                                                მობილური ტელეფონები
+                                                                და აქსესუარები
+                                                            </a>
+                                                            <ul class="sub_category_ul">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        სმარტფონები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        ქეისები და ეკრანის დამცავები
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_item">
+                                                    <ul class="category_ul">
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">ფოტო-ვიდეო აპარატურა</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">ფირსაკრავები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">IPOD/MP3 პლეიერები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">
+                                                                კომპიუტერული ტექნიკა
+                                                                და აქსესუარები
+                                                            </a>
+                                                            <ul class="sub_category_ul">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        ნოუთბუქები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        პერსონალური კომპიუტერები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        მონიტორები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        პლანშეტები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        ნოუთბუქის ჩანთები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        კომპიუტერის ქეისები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        კლავიატურები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        მაუსები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        მიკროფონები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        ვებ კამერები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        USB ფლეშ მეხსიერებები
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_item">
+                                                    <ul class="category_ul">
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">სახლის კინოთეატრები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">მუსიკალური
+                                                                ინსტრუმენტები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">ობიექტივები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">
+                                                                საოფისე და ქსელური
+                                                                მოწყობილობები
+                                                            </a>
+                                                            <ul class="sub_category_ul">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        პრინტერები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        სკანერები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        ფაქსის აპარატები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        IP ტელეფონები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Wi-Fi და Bluetooth ადაპტერები
+                                                                        სვიჩები
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_item">
+                                                    <ul class="category_ul">
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">ფოტო-ვიდეო აპარატურა</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">ფირსაკრავები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">IPOD/MP3 პლეიერები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">
+                                                                კომპიუტერული ტექნიკა
+                                                                და აქსესუარები
+                                                            </a>
+                                                            <ul class="sub_category_ul">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        ნოუთბუქები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        პერსონალური კომპიუტერები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        მონიტორები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        პლანშეტები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        ნოუთბუქის ჩანთები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        კომპიუტერის ქეისები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        კლავიატურები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        მაუსები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        მიკროფონები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        ვებ კამერები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        USB ფლეშ მეხსიერებები
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="category_item">
+                                                    <ul class="category_ul">
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">სახლის კინოთეატრები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">მუსიკალური
+                                                                ინსტრუმენტები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">ობიექტივები</a>
+                                                        </li>
+                                                        <li class="category_li">
+                                                            <a href="#" class="category_a">
+                                                                საოფისე და ქსელური
+                                                                მოწყობილობები
+                                                            </a>
+                                                            <ul class="sub_category_ul">
+                                                                <li>
+                                                                    <a href="#">
+                                                                        პრინტერები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        სკანერები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        ფაქსის აპარატები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        IP ტელეფონები
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Wi-Fi და Bluetooth ადაპტერები
+                                                                        სვიჩები
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/pc.png" alt="">
+                                            ელექტრონიკა მულტიმედია</a>
+                                    </li>
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/choper.png" alt="">
+                                            სამზარეულოს ტექნიკა
+                                            და აქსესუარები</a>
+                                    </li>
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/clean.png" alt="">
+                                            სახლი და ჰიგიენა
+                                        </a>
+                                    </li>
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/machine.png" alt="">
+                                            მსხვილი საყოფაცხოვრებო
+                                            ტექნიკა
+                                        </a>
+                                    </li>
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/agro.png" alt="">
+                                            აგროტექნიკა
+                                        </a>
+                                    </li>
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/beauty.png" alt="">
+                                            ჯანმრთელობა და სილამაზე
+                                        </a>
+                                    </li>
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/pens.png" alt="">
+                                            სასკოლო პროდუქცია
+                                        </a>
+                                    </li>
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/books.png" alt="">
+                                            წიგნები
+                                        </a>
+                                    </li>
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/toys.png" alt="">
+                                            საბავშვო პროდუქცია
+                                        </a>
+                                    </li>
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/bicycle.png" alt="">
+                                            სპორტი დასვენება
+                                            და გართობა
+                                        </a>
+                                    </li>
+                                    <li class="level_li">
+                                        <a href="#" class="level_li_a has-sub-menu d-flex align-items-center">
+                                            <img src="img/icons/auto.png" alt="">
+                                            საავტომობილო ტექნიკა
+                                            და აქსესუარები
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="d-lg-block d-none">როგორ შევიძინო</a>
+                    <a href="#" class="d-lg-block d-none">წესები</a>
+                    <a href="#" class="d-lg-block d-none">ფასდაკლებები და აქციები</a>
+                    <a href="#" class="d-lg-block d-none">გადახდის მეთოდი</a>
+                    <a href="#" class="d-lg-block d-none">კონტაქტი</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="product_section">
+            <div class="container">
+                <ul class="category_nav d-flex align-items-center mb-3">
+                    <li class="category_item_li position-relative">
+                        <img src="img/home_.svg" alt="">
+                    </li>
+                    <li class="category_item_li position-relative">
+                        შეკვეთები
+                    </li>
+                </ul>
+                <div class="divider"></div>
+                <div class="cart_info d-flex">
+                    <div class="d-flex">
+                        <div class="cart_img">
+                            <img src="img/product_img.png" alt="">
+                        </div>
+                        <div class="cart_right_side d-flex orders_item">
+                            <div class="product_desk">
+                                <p class="cart_title pl-3">დასახელება</p>
+                                <p class="cart_txt pl-3">მობილური ტელეფონი Samsung Galaxy Z Flip3 5G 8GB, 256GB, Dual Sim</p>
+                            </div>
+                            <div class="code_">
+                                <p class="cart_title w-100">ID</p>
+                                <p class="cart_txt w-100 justify-content-center">2541047</p>
+                            </div>
+                            <div class="product_quantity">
+                                <p class="cart_title w-100 text-center">თარიღი</p>
+                                <div class="order_date">
+                                    25.11.2021  20:00
+                                </div>
+                            </div>
+                            <div class="cart_price">
+                                <p class="cart_title w-100 text-center">სულ</p>
+                                <p class="cart_txt w-100 justify-content-center">630₾</p>
+                            </div>
+                            <div class="total_price">
+                                <p class="cart_title w-100 text-center">მოქმედება</p>
+                                <p class="cart_txt w-100 justify-content-center">
+                                    <img src="img/noun-printer-4432061.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 mb-lg-0 mb-3">
+                        <div class="footer_block">
+                            <a href="#" class="footer_logo mb-4">
+                                <img src="img/unishop.svg" alt="">
+                            </a>
+                            <div class="address_block">
+                                <div class="address_item d-flex align-items-center">
+                                    <img src="img/pin.png" alt="">
+                                    <p>ქ.ქუთაისი ჭავჭავაძის N35ტ
+                                        <br>ქ.ქუთაისი ჭავჭავაძის N35ტ
+                                    </p>
+                                </div>
+                                <div class="address_item d-flex align-items-center">
+                                    <a href="telto:(+995) 0322 151 150" class="d-flex align-items-center">
+                                        <img src="img/phone.png" alt="">
+                                        (+995) 0322 151 150
+                                    </a>
+                                </div>
+                                <div class="address_item d-flex align-items-center">
+                                    <a href="mail:info@unishopsale" class="d-flex align-items-center">
+                                        <img src="img/mail.png" alt="">
+                                        info@unishopsale
+                                    </a>
+                                </div>
+                                <div class="address_item d-flex align-items-center">
+                                    <img src="img/clock.png" alt="">
+                                    <div class="d-flex flex-column">
+                                        <p>სამუშაო საათები</p>
+                                        <p>ორშ-შაბ: 10:00-22:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-lg-0 mb-3">
+                        <div class="footer_block">
+                            <h4 class="footer_title mb-4">კატეგორიები</h4>
+                            <ul class="footer_ul">
+                                <li class="footer_li">
+                                    <a href="#">ტექნიკა</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">სათამაშოები</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">სანტექნიკა</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">ავეჯი და მატრასები</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">ავტოელექტრონიკა</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">ზოო პროდუქცია</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-lg-0 mb-3">
+                        <div class="footer_block">
+                            <h4 class="footer_title mb-4">ყიდვა</h4>
+                            <ul class="footer_ul">
+                                <li class="footer_li">
+                                    <a href="#">ტექნიკა</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">სათამაშოები</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">სანტექნიკა</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">ავეჯი და მატრასები</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">ავტოელექტრონიკა</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">ზოო პროდუქცია</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 pr-lg-0 mb-lg-0 mb-3">
+                        <div class="footer_block">
+                            <h4 class="footer_title mb-4">წესები და პირობები</h4>
+                            <ul class="footer_ul">
+                                <li class="footer_li">
+                                    <a href="#">წესები და პირობები</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">ჩვენს შესახებ</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">მიწოდება</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">დაბრუნების პოლიტიკა</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">კონფიდენციალურობის პოლიტიკა</a>
+                                </li>
+                                <li class="footer_li">
+                                    <a href="#">კონტაქტი</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="social_block d-flex align-items-center">
+                    <div class="social_items d-flex align-items-center">
+                        <a href=" #" class="social_a">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social_a">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social_a">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social_a">
+                            <img src="img/tik-tok.png" alt="">
+                        </a>
+                    </div>
+                    <div class="payment_block d-flex align-items-center">
+                        <div class="mr-3">
+                            <img src=" img/visa_.png" alt="">
+                        </div>
+                        <div>
+                            <img src="img/master_.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom text-center">copyright © unishopsale.ge</div>
+
+    </footer>
+
+    <!-- scripts -->
+    <script src="plugin/swiperSlider/js/swiper.min.js"></script>
+    <script src="plugin/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="plugin/bootstrap-4.0.0/js/popper.min.js"></script>
+    <script src="plugin/bootstrap-4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+    <script src="js/app.js?v=1"></script>
+
+</body>
+
+</html>

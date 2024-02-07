@@ -1,0 +1,2252 @@
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  overflow-x: hidden !important;
+  font-family: "FiraGO";
+  background-color: #f7f7f6;
+}
+
+main {
+  min-height: calc(100vh - 340px);
+}
+
+.img_fluid {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/*mobile_menu*/
+.burger_menu {
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-animation: burgerAnimation 3s linear infinite alternate;
+  animation: burgerAnimation 3s linear infinite alternate;
+  width: 30px;
+  height: 23px;
+  padding: 0px 5px;
+  border-radius: 2px;
+}
+
+.burger__ {
+  display: block;
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.burger__ i {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  color: #f69419;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #f69419;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.burger__ i::before {
+  top: -7px;
+}
+
+.burger__ i::before,
+.burger__ i::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #f69419;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.burger__ i::after {
+  bottom: -7px;
+}
+
+.burger__.burg_act i {
+  background: transparent;
+}
+
+.burger__.burg_act i::before {
+  top: 0;
+  -webkit-transform: rotateZ(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotateZ(45deg);
+}
+
+.burger__.burg_act i::after {
+  bottom: 0;
+  -webkit-transform: rotateZ(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.mobile_navigation {
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  top: 122px;
+  left: -2px;
+  padding-top: 20px;
+  margin: 0px !important;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.mobile_navigation .nav_li {
+  color: #1a5871;
+}
+
+.mobile_navigation .lang_item {
+  color: #1a5871;
+}
+
+.nav_li {
+  margin-bottom: 10px;
+}
+
+.nav_act {
+  -webkit-transform: translateX(0%) !important;
+  -ms-transform: translateX(0%) !important;
+  transform: translateX(0%) !important;
+  -webkit-transition-delay: 0.3s !important;
+  -o-transition-delay: 0.3s !important;
+  transition-delay: 0.3s !important;
+  left: 0px;
+}
+
+.overflow_hidden {
+  overflow: hidden !important;
+}
+
+/*mobile_menu end*/
+.header_top {
+  background-color: #fff;
+  border-bottom: 1px solid #dedede;
+}
+
+.top_header {
+  padding: 10px 0;
+}
+
+.lang_btn,
+.lang_block .dropdown-menu {
+  align-items: center;
+  color: #606060;
+  font-size: 12px;
+  font-family: "FiraGO md";
+}
+
+.lang_block .dropdown-menu {
+  min-width: 100%;
+  font-size: 12px;
+}
+
+.sign_buttons {
+  display: flex;
+  align-items: center;
+  color: #464646;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.sign_in {
+  margin-right: 35px;
+  position: relative;
+}
+
+.sign_in::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 22px;
+  right: -20px;
+  background-color: #eeeeee;
+}
+
+.header_ {
+  padding: 15px 0;
+}
+
+.logo_block {
+  margin-right: 40px;
+  width: 180px;
+}
+
+.logo_block img {
+  width: 100%;
+}
+
+.search_ {
+  position: absolute;
+  background-color: #f69419;
+}
+
+.search_block {
+  width: 495px;
+  height: 36px;
+  margin-right: 15px;
+}
+
+.search_block input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #f69419;
+  border-radius: 18px;
+  padding-left: 20px;
+  font-size: 12px;
+}
+
+.search_ {
+  width: 60px;
+  height: 36px;
+  background-color: #f69419;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 18px 18px 0;
+}
+
+.contact_us {
+  font-size: 14px;
+  color: #f69419;
+  line-height: normal;
+  margin-right: 60px;
+}
+
+.contact_us img {
+  margin-right: 10px;
+}
+
+.contact_us p {
+  color: #6fafd1;
+}
+
+.wish_block a {
+  margin-right: 30px;
+}
+
+.wish_block a:last-child {
+  margin: 0;
+}
+
+.cart_box {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #6fafd1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  font-family: "FiraGO lg";
+  position: absolute;
+  top: -10px;
+  right: -14px;
+}
+
+.header_bottom {
+  background-color: #6fafd1;
+}
+
+.nav_block {
+  height: 45px;
+}
+
+.nav_block,
+.category_btn {
+  color: #fff;
+  font-family: "FiraGO Book";
+}
+
+.category_btn::after {
+  width: 9px;
+  height: 6px;
+  vertical-align: 0px;
+  margin-left: 10px;
+  border: none;
+  background-image: url("../img/white_arrow.png");
+}
+
+.category_btn img {
+  margin-right: 10px;
+}
+
+.caregory_menu {
+  top: 10px !important;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-bottom-left-radius: 20px;
+}
+
+.swiper {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: none;
+}
+
+.slider_img {
+  height: 420px;
+}
+
+.s1 .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #f5c68b;
+  opacity: 1;
+}
+
+.s1 .swiper-pagination-bullet-active {
+  background-color: #f69419;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-image: none;
+  background-size: initial;
+  margin: 0;
+}
+
+.s1 .swiper-button-next {
+  background-image: url("../img/arrow_right.svg");
+  background-repeat: no-repeat;
+  right: 0;
+}
+
+.s1 .swiper-button-prev {
+  background-image: url("../img/arrow_left.svg");
+  background-repeat: no-repeat;
+  left: 0;
+}
+
+.brands_section {
+  padding: 25px 0 30px;
+}
+
+.brands_slider {
+  padding: 0 50px;
+}
+
+.brands_slider .swiper-button-next,
+.brands_slider .swiper-button-prev {
+  width: 9px;
+  height: 15px;
+  top: 45%;
+}
+
+.brands_slider .swiper-button-next,
+.arrow_block .swiper-button-next {
+  background-image: url("../img/sm_arrow_right.svg");
+  right: 20px;
+}
+
+.brands_slider .swiper-button-prev,
+.arrow_block .swiper-button-prev {
+  background-image: url("../img/sm_arrow_left.svg");
+  left: 20px;
+}
+
+.brand_img {
+  width: 100%;
+  height: 88px;
+  background: #fff;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand_img img {
+  width: 100%;
+  height: 40px;
+}
+
+.title_ {
+  font-size: 18px;
+  color: #f69419;
+}
+
+.product_items {
+  background-color: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  position: relative;
+  transition: all 0.5s;
+}
+.product_items:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 16%);
+}
+.product_img {
+  max-width: 228px;
+  height: 190px;
+}
+.s3,
+.s4,
+.s5 {
+  padding: 5px 0;
+}
+.product_img img {
+  transition: all 0.5s;
+}
+
+.product_img:hover img {
+  transform: scale(1.05);
+}
+
+.product_description {
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: #595a5a;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: normal;
+}
+
+.price_ {
+  margin-bottom: 20px;
+  color: #f69419;
+  font-size: 18px;
+  font-family: "FiraGO Book";
+}
+
+.add_basket {
+  background-color: #6fafd1;
+  height: 40px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-family: "FiraGO Book";
+  width: 100%;
+}
+
+.arrow_block {
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #dedede;
+}
+
+.arrows .swiper-button-next,
+.arrows .swiper-button-prev {
+  width: 9px;
+  height: 15px;
+}
+
+.arrows .swiper-button-next {
+  right: 0;
+}
+
+.arrows .swiper-button-prev {
+  right: 30px;
+  left: initial;
+}
+
+.new_products_section {
+  margin-bottom: 30px;
+}
+
+.popular_section {
+  margin-bottom: 20px;
+}
+
+.service_txt_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0;
+  line-height: normal;
+  color: #6fafd1;
+}
+
+.service_title {
+  font-family: "FiraGO bd";
+  font-size: 20px;
+  color: #f69419;
+}
+
+.service_icon {
+  width: 100%;
+}
+
+.service_icon img {
+  width: 100%;
+}
+
+.delivery_txt {
+  color: #6fafd1;
+  font-size: 15px;
+  font-family: "FiraGO md";
+  margin-bottom: 25px;
+}
+
+.service_mobile {
+  font-family: "FiraGO bd";
+  font-size: 28px;
+}
+
+.sale_section {
+  padding: 30px 0 50px;
+}
+
+.price_drop {
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f69419;
+  border-radius: 18px 0 18px 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 30px;
+  z-index: 9;
+}
+
+.old_price {
+  text-decoration: line-through;
+  color: #a4a4a4;
+  font-size: 14px;
+  font-family: "FiraGO Book";
+}
+
+.s5 .swiper-slide {
+  height: auto;
+}
+
+.s5 .product_items {
+  height: 100%;
+  justify-content: space-between;
+}
+
+.footer_ {
+  border-top: 1px solid #f69419;
+  border-bottom: 1px solid #f69419;
+  padding: 15px 0 20px;
+}
+
+.footer_logo {
+  display: flex;
+  align-items: center;
+}
+
+.address_item {
+  font-size: 12px;
+  font-family: "FiraGO md";
+  margin-bottom: 20px;
+  color: #555555;
+  line-height: normal;
+}
+
+.address_item img {
+  margin-right: 20px;
+}
+
+.footer_title {
+  font-family: "FiraGO md";
+  color: #141414;
+  height: 68px;
+  display: flex;
+  align-items: center;
+}
+
+.footer_li {
+  margin-bottom: 15px;
+  color: #5d5c5c;
+  font-size: 14px;
+}
+
+.footer_li:last-child {
+  margin: 0;
+}
+
+.footer_li::before {
+  content: "\2022";
+  color: #f69419;
+  font-weight: bold;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+}
+
+.social_a {
+  width: 32px;
+  height: 32px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background-color: #4a4a4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff !important;
+}
+
+.social_a img {
+  width: 16px;
+}
+
+.social_block {
+  justify-content: space-between;
+  padding: 0 160px 0 50px;
+}
+
+.footer_bottom {
+  background-color: #dce3e6;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.navigation {
+  width: 260px;
+}
+
+.navigation .level-1 {
+  font-size: 0;
+  border-right: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+
+.navigation .level_li {
+  display: block;
+  background: #fff;
+  transition: background 150ms linear 150ms;
+}
+
+.navigation .level_li:last-child {
+  border-bottom-left-radius: 20px;
+}
+
+.navigation .level_li:hover {
+  background: #efefef;
+}
+
+.navigation .level_li:hover .level-2 {
+  visibility: visible;
+}
+
+.level_li_a {
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  padding: 15px 10px 15px 15px;
+  color: #2d2d2d !important;
+  font-family: "FiraGO md";
+}
+
+.navigation .level-2 {
+  position: absolute;
+  top: 0;
+  left: 260px;
+  width: 810px;
+  height: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  visibility: hidden;
+  transition: visibility 150ms linear 150ms, background 150ms linear 150ms;
+  border-bottom-right-radius: 20px;
+}
+
+.level-2 {
+  background-image: url("../img/computer.png");
+  background-repeat: no-repeat;
+  background-position: 95% 95%;
+}
+
+.navigation.touch-screen .level-2 {
+  visibility: initial;
+  display: none;
+  transition: none;
+}
+
+.navigation.touch-screen .level_li:hover .level-2 {
+  visibility: initial;
+  display: block;
+}
+
+.navigation.touch-screen .level_li,
+.navigation.no-hover-intent .level_li {
+  visibility: initial;
+  transition: none;
+}
+
+.navigation.no-hover-intent .level-2 {
+  visibility: initial;
+  display: none;
+}
+
+.navigation.no-hover-intent .level_li:hover .level-2 {
+  visibility: initial;
+  display: block;
+}
+
+.has-sub-menu img {
+  width: 24px;
+  margin-right: 15px;
+}
+
+.level-2 {
+  padding: 15px 0;
+}
+
+.category_ul {
+  padding: 0 10px;
+}
+
+.category_li {
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 14px;
+  color: #2d2d2d;
+  padding: 10px;
+  font-family: "FiraGO sb";
+  width: 245px;
+  margin-bottom: 15px;
+  margin-right: 25px;
+}
+
+.category_li:nth-child(3n) {
+  margin-right: 0;
+}
+.sub_category_ul {
+  font-family: "FiraGO Book";
+  color: #7d7d7d !important;
+  padding-top: 10px;
+  line-height: normal;
+  transition: 0.3s all ease;
+  display: none;
+}
+
+.category_li:hover .sub_category_ul {
+  display: block;
+}
+
+.product_section {
+  margin-top: 25px;
+}
+
+.category_nav {
+  margin-bottom: 30px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.category_nav::-webkit-scrollbar {
+  display: none;
+}
+
+.category_item_li {
+  padding-right: 20px;
+  margin-right: 10px;
+  color: #606060;
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.category_item_li::before {
+  position: absolute;
+  right: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f105";
+}
+
+.category_item_li:last-child::before {
+  content: none;
+}
+
+.filter_btn {
+  font-size: 10px;
+  border-radius: 10px;
+  padding: 6px 9px;
+}
+
+.price_block {
+  background-color: #fff;
+}
+
+.remove_btn {
+  background-color: #ff6a6a;
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter_button.dropdown-toggle::after {
+  content: none;
+}
+
+.filter_ {
+  margin-bottom: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px 10px;
+}
+
+.filter_menu {
+  min-width: 300px;
+  padding: 0;
+  margin: 0;
+  left: -10px !important;
+}
+
+.filter_menu .accordion {
+  width: 100%;
+  max-width: 584px;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 5px;
+}
+
+.filter_menu .accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+  color: #606060;
+  font-family: "FiraGO sb";
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.filter_menu .accordion li {
+  border-bottom: 1px solid #dedede;
+}
+
+.filter_menu .accordion li:last-child {
+  border-bottom: 0;
+}
+
+.filter_menu .accordion li i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.filter_menu .accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 16px;
+}
+
+.filter_menu .accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.submenu {
+  display: none;
+  padding: 20px 15px;
+}
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 12px;
+  padding-left: 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+  background: #b63b4d;
+  color: #fff;
+}
+
+.filter_input {
+  margin-right: 10px;
+}
+
+.filter_input input {
+  width: 70px;
+  height: 36px;
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  color: #606060;
+  font-size: 12px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.filter_input label {
+  color: #f69419;
+}
+
+.line_ {
+  height: 1px;
+  width: 16px;
+  background-color: #707070;
+  margin-right: 10px;
+}
+
+.brand_input input {
+  width: 100%;
+  height: 48px;
+  border-radius: 13px;
+  border: 1px solid #dedede;
+  padding-left: 15px;
+  color: #b9b9b9;
+}
+
+.brand_input input::placeholder {
+  color: #b9b9b9;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+  color: #606060;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #707070;
+  padding: 8px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 15px;
+  border-radius: 3px;
+}
+
+.form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 5px;
+  height: 10px;
+  border: solid #707070;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.brand_items {
+  max-height: 150px;
+  overflow: auto;
+}
+
+.brand_items::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dedede;
+  border-radius: 10px;
+}
+
+.search_info {
+  padding: 60px 15px 50px;
+}
+
+.search_btn {
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
+  background-color: #ff6a6a;
+  color: #fff;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.pagination a {
+  color: #606060 !important;
+  float: left;
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.pagination a.active {
+  background-color: #f69419;
+  color: white !important;
+}
+
+.pagination a:first-child {
+  background-color: transparent;
+}
+
+.pagination a:last-child {
+  background-color: transparent;
+  margin: 0 !important;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: #dedede;
+  margin-bottom: 25px;
+}
+
+.gallery_ {
+  background-color: #fff;
+  width: 100%;
+  height: 330px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mySwiper_2 {
+  width: 255px;
+  height: 255px;
+  position: relative;
+}
+
+.mySwiper_1 .swiper-slide img,
+.mySwiper_2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper_1 .swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mySwiper_1 .swiper-slide,
+.mySwiper_2 .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper_1 {
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+.mySwiper_1 .swiper-slide {
+  width: 58px;
+  height: 58px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mySwiper_1 .swiper-slide img {
+  height: 40px;
+  width: 40px;
+}
+
+.mySwiper_2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper_1 .swiper-button-next:after,
+.mySwiper_1 .swiper-button-prev:after {
+  content: none;
+}
+
+.mySwiper_1 .swiper-button-next,
+.mySwiper_1 .swiper-button-prev {
+  top: 42%;
+  height: initial;
+  opacity: 1;
+}
+
+.mySwiper_1 .swiper-button-prev {
+  left: -6px;
+}
+
+.mySwiper_1 .swiper-button-next {
+  right: -6px;
+}
+
+.mySwiper_1 i {
+  color: #f69419;
+}
+
+.sale_block {
+  width: 70px;
+  height: 30px;
+  border-radius: 16px 0 16px 0;
+  background-color: #f69419;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fav_block {
+  width: 24px;
+  height: 24px;
+  color: #f69419;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.fav_block:hover .heart_one {
+  display: none;
+}
+
+.fav_block:hover .heart_two {
+  display: block !important;
+}
+
+.fav_block i {
+  color: #f69419;
+  font-size: 25px;
+}
+
+.hide_ {
+  display: none;
+}
+
+.show_ {
+  display: block !important;
+}
+
+.product_title {
+  font-size: 14px;
+  font-family: "FiraGO md";
+  color: #2e2e2e;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.stock_ {
+  font-size: 14px;
+  color: #474747;
+}
+
+.stock_ i {
+  color: #1cc25e;
+  font-size: 16px;
+}
+
+.price_block {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  width: 168px;
+}
+
+.current_price {
+  font-size: 20px;
+  font-family: "FiraGO md";
+  margin: 8px 0;
+  color: #f69419;
+}
+
+.save_money {
+  font-size: 12px;
+  color: #767677;
+}
+
+.checklist_li {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.checklist_li:last-child {
+  margin: 0;
+}
+
+.memory_item {
+  margin-bottom: 30px;
+}
+
+.memory_li {
+  width: 76px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #474747;
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.memory_li.active {
+  background-color: #f69419;
+  color: #fff;
+}
+
+.product_details {
+  color: #474747;
+  font-size: 14px;
+  font-family: "FiraGO md";
+  margin-bottom: 8px;
+}
+
+.product_details span {
+  color: #f69419;
+}
+
+.quantity_form {
+  width: 98px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.value-button {
+  margin: 0px;
+  width: 26px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f6f6;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #e5e5e5;
+  color: #f69419;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+.quantity_form #decrease {
+  border-radius: 17px 0 0 17px;
+}
+
+.quantity_form #increase {
+  border-radius: 0 17px 17px 0;
+}
+
+.quantity_form input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 44px;
+  height: 100%;
+  color: #619dbc;
+}
+
+.quantity_form input[type="number"]::-webkit-inner-spin-button,
+.quantity_form input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.add_to_basket {
+  cursor: pointer;
+  width: 200px;
+  height: 36px;
+  background-color: #f69419;
+  border-radius: 23px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.shoping_details {
+  background-color: #fff;
+  border-radius: 16px;
+  padding-top: 15px;
+}
+
+.shoping_item {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dedede;
+}
+
+.shoping_item:last-child {
+  border: none;
+}
+
+.shoping_ {
+  font-size: 14px;
+  margin-left: 25px;
+  color: #619dbc;
+}
+
+.sub_txt {
+  color: #676767;
+  font-size: 12px;
+  margin-bottom: 10px;
+  line-height: normal;
+}
+
+.pay_list {
+  color: #5b5b5b;
+  font-size: 12px;
+  padding-left: 20px;
+  line-height: normal;
+}
+
+.pay_list li::before {
+  content: "\2022";
+  color: #5b5b5b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.shoping_item i {
+  color: #f69519;
+}
+
+/*tabs*/
+.tab_wrapper {
+  padding: 15px 0;
+}
+
+.show_tabs {
+  display: block !important;
+}
+
+.tabs_box {
+  display: none;
+}
+
+.tab_buttons_wrap {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #dedede;
+}
+
+.tab_buttons_wrap ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.tab_btn {
+  position: relative;
+}
+
+.tab_btn div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.tab_buttons {
+  cursor: pointer;
+  color: #619dbc;
+  font-size: 14px;
+  min-width: 150px;
+}
+
+.tab_buttons:last-child {
+  margin-right: 0;
+}
+
+.tab_btn_act {
+  background: transparent;
+  font-family: "FiraGO bd";
+  box-shadow: none;
+  position: relative;
+}
+
+.tab_btn_act::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #f69419;
+  bottom: -18px;
+  left: 0;
+}
+
+.tabs_content_block {
+  color: #707070;
+  font-size: 20px;
+  font-family: "FiraGO Book";
+}
+
+.desc_li {
+  font-size: 12px;
+  font-family: "FiraGO md";
+  padding: 5px 0;
+}
+
+.desc_li::before {
+  content: "\2022";
+  color: #5b5b5b;
+  font-weight: bold;
+  display: inline-block;
+  width: 2em;
+  padding-left: 10px;
+}
+
+.desc_span {
+  font-family: "FiraGO";
+}
+
+.desc_li:nth-child(odd) {
+  background-color: #fff;
+}
+
+.desc_li:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.registration_section {
+  padding: 50px 0 150px;
+}
+
+.authorization_side,
+.registration_side {
+  width: 50%;
+}
+
+.authorization_side {
+  border-radius: 30px 0 0 30px;
+  background-color: #fef6e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.authorization_form {
+  width: 352px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.input_item {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 15px;
+}
+
+.input_item input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  background-color: #fff;
+  padding-left: 15px;
+  color: #4e4e4e;
+}
+
+.input_item input::placeholder {
+  color: #4e4e4e;
+}
+
+.author_txt {
+  font-size: 12px;
+  color: #f69419;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.sign_btn {
+  color: #fff;
+  background-color: #78b4d3;
+  font-size: 18px;
+  width: 100%;
+  height: 48px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.social_btns {
+  margin-bottom: 10px;
+}
+
+.line_ {
+  width: 132px;
+  height: 1px;
+  background-color: #e1e1e1;
+  margin-bottom: 10px;
+}
+
+.registration_side {
+  background-color: #fff;
+  border-radius: 0 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 35px 0 55px;
+}
+
+.registration_ {
+  font-size: 18px;
+  color: #f69419;
+  margin-bottom: 30px;
+  font-family: "FiraGO sb";
+}
+
+.registration_form {
+  width: 444px;
+}
+
+.register_input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 15px;
+}
+
+.register_input input,
+.password_item input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  padding-left: 15px;
+}
+
+.password_item {
+  width: 48%;
+  height: 48px;
+}
+
+.privacy_ {
+  color: #f69419;
+}
+
+.registration_form .form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.registration_form .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.registration_form .form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.registration_form .form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #4e4e4e;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 6px;
+}
+
+.registration_form .form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 4px;
+  height: 10px;
+  border: solid #4e4e4e;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+.cart_info {
+  margin-bottom: 20px;
+}
+
+.cart_img {
+  background-color: #fff;
+  width: 124px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 0 0 15px;
+  border-right: 1px solid #e3e3e3;
+}
+
+.cart_img img {
+  width: 64px;
+  height: 64px;
+}
+
+.cart_right_side {
+  font-size: 12px;
+  border-radius: 0 0px 15px 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.product_desk {
+  width: 430px;
+  border-right: 1px solid #e3e3e3;
+}
+
+.cart_title {
+  background-color: #efefef;
+  font-family: "FiraGO bd";
+  padding: 12px 0;
+}
+
+.cart_txt {
+  height: 61px;
+  display: flex;
+  align-items: center;
+}
+
+.code_ {
+  width: 105px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-right: 1px solid #e3e3e3;
+}
+
+.cart_price {
+  width: 150px;
+  border-right: 1px solid #e3e3e3;
+}
+
+.cart_price .cart_txt {
+  color: #f69419;
+  font-size: 18px;
+}
+
+.product_quantity {
+  width: 132px;
+  border-right: 1px solid #e3e3e3;
+}
+
+.product_quantity .quantity_form {
+  width: 69px;
+  height: 23px;
+}
+
+.product_quantity .quantity_form input#number {
+  width: 30px;
+  font-size: 14px;
+  font-family: "FiraGO Book";
+}
+
+.quantity_inputs {
+  height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.total_price {
+  width: 135px;
+}
+
+.total_price .cart_txt {
+  color: #f69419;
+  font-size: 18px;
+}
+
+.delete_btn {
+  font-size: 18px;
+  color: #656565;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  cursor: pointer;
+}
+
+.user_section {
+  padding-top: 35px;
+  margin-bottom: 200px;
+}
+
+.user_title {
+  font-size: 18px;
+  color: #f69419;
+  margin-bottom: 10px;
+  font-family: "FiraGO md";
+}
+
+.divider_ {
+  width: 100%;
+  height: 1px;
+  background-color: #dedede;
+  margin-bottom: 15px;
+}
+
+.user_form {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.user_input {
+  width: 100%;
+  height: 48px;
+  margin-bottom: 15px;
+}
+
+.user_input input {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  border: 1px solid #ececec;
+  border-radius: 7px;
+  font: 12px;
+}
+
+.user_input_block {
+  justify-content: space-between;
+}
+
+.user_input_block .user_input {
+  width: 260px;
+}
+
+.txt_area textarea {
+  width: 100%;
+  height: 71px;
+  border-radius: 7px;
+  border: 1px solid #dedede;
+  resize: none;
+  padding: 20px;
+}
+
+.pament_method {
+  margin-bottom: 40px;
+}
+
+.payment_item {
+  position: relative;
+  cursor: pointer;
+  width: 260px;
+  height: 115px;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #686565;
+  font-family: "FiraGO md";
+  line-height: normal;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+}
+
+.check_ {
+  color: #1cc25e;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.pay_bank {
+  width: 150px;
+  height: 90px;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mb_20 {
+  margin-bottom: 20px;
+}
+
+.confirm_block {
+  background-color: #c9dfeb;
+  padding: 12px 10px;
+  margin-bottom: 25px;
+}
+
+.confirm_block .form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.confirm_block .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.confirm_block .form-group label {
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  color: #5d5d5d;
+  font-family: "FiraGO md";
+}
+
+.confirm_block .form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #393939;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 0;
+  padding: 0;
+}
+
+.confirm_block .form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 3px;
+  height: 7px;
+  border: solid #393939;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+.operator_ {
+  background-color: #fff;
+  height: 144px;
+  background-image: url("../img/girl_.png");
+  background-repeat: no-repeat;
+  background-position: 95%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.operator_txt {
+  width: 302px;
+  font-size: 13px;
+  font-family: "FiraGO md";
+  color: #6fafd1;
+  margin-right: 30px;
+  margin-left: 50px;
+  line-height: normal;
+}
+
+.operator_number {
+  color: #f69419;
+  font-size: 25px;
+}
+
+.order_ {
+  background-color: #f69419;
+  height: 49px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-family: "FiraGO Book";
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.user_product {
+  background-color: #fcfcfc;
+  border-radius: 15px;
+  padding: 15px 0;
+}
+
+.your_product {
+  color: #131313;
+  font-size: 12px;
+  font-family: "FiraGO md";
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.your_product_img {
+  width: 56px;
+  height: 56px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dedede;
+  margin-right: 10px;
+}
+
+.your_product_img img {
+  width: 40px;
+  height: 40px;
+}
+
+.your_product_info {
+  width: 170px;
+  position: relative;
+}
+
+.product_block {
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.product_summery {
+  padding: 0 10px;
+  margin-bottom: 140px;
+}
+
+.product_name {
+  width: 140px;
+  font-size: 13px;
+  font-family: "FiraGO Book";
+  line-height: normal;
+  color: #131313;
+}
+
+.product_quantity_block {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.quantity_item {
+  font-family: "FiraGO Book";
+}
+
+.total_cost {
+  color: #f69419;
+  font-family: "FiraGO md";
+}
+
+.remove_ {
+  color: #656565;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product_sum {
+  font-size: 12px;
+  font-family: "FiraGO md";
+}
+
+.sum_price {
+  font-size: 14px;
+  font-family: "FiraGO md";
+}
+
+.total_sum {
+  font-size: 18px;
+  color: #f69925;
+  font-family: "FiraGO md";
+}
+
+.px_10 {
+  padding: 0 10px;
+}
+
+.my_user {
+  font-size: 12px;
+}
+
+.compare_list {
+  padding: 35px 0 150px;
+}
+
+.compare_product {
+  margin-bottom: 50px;
+}
+
+.compare_image {
+  width: 260px;
+  border-radius: 18px;
+  padding: 15px;
+  background-color: #fff;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.compare_image img {
+  max-width: 228px;
+  height: 190px;
+  margin-bottom: 15px;
+}
+
+.compare_product_name {
+  color: #595a5a;
+  font-size: 14px;
+  text-align: center;
+  width: 180px;
+  margin-bottom: 30px;
+}
+
+.compare_price {
+  color: #f69419;
+  font-size: 18px;
+  font-family: "FiraGO Book";
+}
+
+.border_rg {
+  border-right: 1px solid #e7e7e7;
+}
+.user_information:hover .user_info {
+  visibility: visible;
+  opacity: 1;
+}
+.user_info {
+  width: 205px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 16%);
+  position: absolute;
+  bottom: -95px;
+  z-index: 2;
+  font-size: 12px;
+  right: 0;
+  padding: 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.user_info_list li {
+  margin-bottom: 10px;
+}
+.user_info_list li:last-child {
+  margin-bottom: 0;
+}
+.user_info_box {
+  position: relative;
+}
+
+.user_info_box::after {
+  content: "";
+  position: absolute;
+  border-color: #fff transparent;
+  border-style: solid;
+  border-width: 0px 6px 7px 6px;
+  height: 0px;
+  width: 0px;
+  top: -22px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.order_date {
+  height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orders_item {
+  border-radius: 0 15px 15px 0;
+}
+.orders_item .total_price .cart_title {
+  border-radius: 0 15px 0 0;
+}
+
+.sub_menu {
+  margin-top: 100px;
+}
+.product_header {
+  border: none !important;
+  font-size: 14px;
+}
+.product_item_header {
+  font-size: 12px;
+  padding: 10px !important;
+}
+.card-header {
+  background-color: transparent;
+  font-family: "FiraGO md";
+  padding: 0.75rem 1rem;
+}
+.card {
+  border: none;
+  border-radius: 0;
+}
+.accordion > .card {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.accordion .card-header:after {
+  content: "";
+  background-image: url("../img/arrow_down.png");
+  width: 16px;
+  height: 16px;
+  right: 1rem;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 10px;
+}
+.card:last-child {
+  border: none;
+}
+.card > a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 5px 0;
+  font-size: 10px;
+}
+.card_li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 5px 0;
+  font-size: 10px;
+}
+.card_li:last-child {
+  border: none;
+}
+.card-body {
+  padding: 0 1rem;
+}
+.card-body .card-header {
+  border: none;
+}
+.card-body .card {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-body .card:last-child {
+  border: none !important;
+}
+.card-body .card a:last-child {
+  border: none;
+}
+.sub_menu {
+  border-radius: 0 !important;
+  margin-top: 14px !important;
+}
+
+.mobile_menu_dropdown {
+  width: 100%;
+}
+.mobile_menu_dropdown .category_btn {
+  width: 100%;
+}
+.position_ {
+  transform: translate3d(0px, 26px, 0px) !important;
+}

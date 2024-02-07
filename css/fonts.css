@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'FiraGO';
+    src: url('../fonts/FiraGO-Regular.eot');
+    src: url('../fonts/FiraGO-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FiraGO-Regular.woff2') format('woff2'),
+        url('../fonts/FiraGO-Regular.woff') format('woff'),
+        url('../fonts/FiraGO-Regular.ttf') format('truetype'),
+        url('../fonts/FiraGO-Regular.svg#FiraGO-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FiraGO md';
+    src: url('../fonts/FiraGO-Medium.eot');
+    src: url('../fonts/FiraGO-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FiraGO-Medium.woff2') format('woff2'),
+        url('../fonts/FiraGO-Medium.woff') format('woff'),
+        url('../fonts/FiraGO-Medium.ttf') format('truetype'),
+        url('../fonts/FiraGO-Medium.svg#FiraGO-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FiraGO lg';
+    src: url('../fonts/FiraGO-Light.eot');
+    src: url('../fonts/FiraGO-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FiraGO-Light.woff2') format('woff2'),
+        url('../fonts/FiraGO-Light.woff') format('woff'),
+        url('../fonts/FiraGO-Light.ttf') format('truetype'),
+        url('../fonts/FiraGO-Light.svg#FiraGO-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'FiraGO Book';
+    src: url('../fonts/FiraGO-Book.eot');
+    src: url('../fonts/FiraGO-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FiraGO-Book.woff2') format('woff2'),
+        url('../fonts/FiraGO-Book.woff') format('woff'),
+        url('../fonts/FiraGO-Book.ttf') format('truetype'),
+        url('../fonts/FiraGO-Book.svg#FiraGO-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FiraGO bd';
+    src: url('../fonts/FiraGO-Bold.eot');
+    src: url('../fonts/FiraGO-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FiraGO-Bold.woff2') format('woff2'),
+        url('../fonts/FiraGO-Bold.woff') format('woff'),
+        url('../fonts/FiraGO-Bold.ttf') format('truetype'),
+        url('../fonts/FiraGO-Bold.svg#FiraGO-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FiraGO sb';
+    src: url('../fonts/FiraGO-SemiBold.eot');
+    src: url('../fonts/FiraGO-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FiraGO-SemiBold.woff2') format('woff2'),
+        url('../fonts/FiraGO-SemiBold.woff') format('woff'),
+        url('../fonts/FiraGO-SemiBold.ttf') format('truetype'),
+        url('../fonts/FiraGO-SemiBold.svg#FiraGO-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
